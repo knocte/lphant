@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<project name="lphant" default="build" basedir=".">
+
+	<target name="build" depends="clean">
+		<solution solutionfile="eLePhant.sln" configuration="Release" />
+	</target>
+
+	<target name="debug" depends="clean">
+		<solution solutionfile="eLePhant.sln" configuration="Debug" />
+	</target>
+
+	<target name="clean">
+		<delete dir="Kernel/bin" verbose="false" failonerror="false"/>
+		<delete dir="Interface/bin" verbose="false" failonerror="false"/>
+		<delete dir="Client/bin" verbose="false" failonerror="false"/>
+	</target>
+
+</project>

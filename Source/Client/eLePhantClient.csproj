@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D8219D66-2C00-401D-92AD-023D118E3693}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>eLePhant.Client</RootNamespace>
+    <AssemblyName>eLePhantClient</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunWithWarnings>false</RunWithWarnings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunWithWarnings>false</RunWithWarnings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Design" />
+    <Reference Include="ICSharpCode.SharpZipLib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kernel\eLePhant.csproj">
+      <Project>{B89EE87D-F0FA-41D9-8C83-D8B913187DE1}</Project>
+      <Name>eLePhant</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interface\eLePhantInterface.csproj">
+      <Project>{43032E62-D53F-4F64-8F7F-F58522FDFBE6}</Project>
+      <Name>eLePhantInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="CSkin.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Client\eLePhantForm.cs" />
+    <Compile Include="Client\FormAbout.cs" />
+    <Compile Include="Client\KernelGateway.cs" />
+    <Compile Include="Client\MenuInfo.cs" />
+    <Compile Include="Client\NameCleaner.cs" />
+    <Compile Include="Client\Remoting.cs" />
+    <Compile Include="Client\StartForm.cs" />
+    <Compile Include="Client\SystemIconsList.cs" />
+    <Compile Include="Client\Forms\FormCategory.cs" />
+    <Compile Include="Client\Forms\FormConnections.cs" />
+    <Compile Include="Client\Forms\FormDownloads.cs" />
+    <Compile Include="Client\Forms\FormFriends.cs" />
+    <Compile Include="Client\Forms\FormOptions.cs" />
+    <Compile Include="Client\Forms\FormSearch.cs" />
+    <Compile Include="Client\Forms\FormServers.cs" />
+    <Compile Include="Client\Forms\FormUploads.cs" />
+    <Compile Include="Client\Forms\FileDetails\FormAviDetails.cs" />
+    <Compile Include="Client\Lists\commentsListView.cs" />
+    <Compile Include="Client\Lists\downloadsListView.cs" />
+    <Compile Include="Client\Lists\eLePhantListView.cs" />
+    <Compile Include="Client\Lists\fileNamesListView.cs" />
+    <Compile Include="Client\Lists\ListColumn.cs" />
+    <Compile Include="Client\Lists\ListColumnArray.cs" />
+    <Compile Include="Client\Lists\queueListView.cs" />
+    <Compile Include="Client\Lists\searchListView.cs" />
+    <Compile Include="Client\Lists\serversListView.cs" />
+    <Compile Include="Client\Lists\sharedListView.cs" />
+    <Compile Include="Client\Lists\sourcesListView.cs" />
+    <Compile Include="Client\Lists\uploadsListView.cs" />
+    <Compile Include="Client\Types\Types.cs" />
+    <Compile Include="Client\Win32\Win32.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MagicLibrary.dll" />
+    <Content Include="Client\App.ico" />
+    <Content Include="Client\webSearchs.xml" />
+    <Content Include="Language\interface_ca-ES.xml" />
+    <Content Include="Language\interface_de-DE.xml" />
+    <Content Include="Language\interface_en-US.xml" />
+    <Content Include="Language\interface_es-ES.xml" />
+    <Content Include="Language\interface_fi-FI.xml" />
+    <Content Include="Language\interface_fr-FR.xml" />
+    <Content Include="Language\interface_gl-ES.xml" />
+    <Content Include="Language\interface_hu-HU.xml" />
+    <Content Include="Language\interface_it-IT.xml" />
+    <Content Include="Language\interface_pl-PL.xml" />
+    <Content Include="Language\interface_pt-BR.xml" />
+    <Content Include="Language\interface_ru-RU.xml" />
+    <Content Include="Language\interface_zh-TW.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Client\eLePhantForm.resx">
+      <DependentUpon>eLePhantForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Forms\FormCategory.resx">
+      <DependentUpon>FormCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Forms\FormConnections.resx">
+      <DependentUpon>FormConnections.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Forms\FormDownloads.resx">
+      <DependentUpon>FormDownloads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Forms\FormFriends.resx">
+      <DependentUpon>FormFriends.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Forms\FormOptions.resx">
+      <DependentUpon>FormOptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Forms\FormSearch.resx">
+      <DependentUpon>FormSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Forms\FormServers.resx">
+      <DependentUpon>FormServers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Forms\FormUploads.resx">
+      <DependentUpon>FormUploads.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Forms\FileDetails\FormAviDetails.resx">
+      <DependentUpon>FormAviDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Lists\commentsListView.resx">
+      <DependentUpon>commentsListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Lists\downloadsListView.resx">
+      <DependentUpon>downloadsListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Lists\eLePhantListView.resx">
+      <DependentUpon>eLePhantListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Lists\fileNamesListView.resx">
+      <DependentUpon>fileNamesListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Lists\queueListView.resx">
+      <DependentUpon>queueListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Lists\searchListView.resx">
+      <DependentUpon>searchListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Lists\serversListView.resx">
+      <DependentUpon>serversListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Lists\sharedListView.resx">
+      <DependentUpon>sharedListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Lists\sourcesListView.resx">
+      <DependentUpon>sourcesListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Lists\uploadsListView.resx">
+      <DependentUpon>uploadsListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\Resources\Classic\BigGraphic.bmp" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnConnect.ico" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnConnectMousePressed.ico" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnConnectMouseUp.ico" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnDisconnect.ico" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnDisconnectMousePressed.ico" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnDisconnectMouseUp.ico" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnDownload.gif" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnFriends.gif" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnOptions.ico" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnOptionsMousePressed.ico" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnOptionsMouseUp.ico" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnSearch.gif" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnSeparatorDown.gif" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnSeparatorDownMousePressed.gif" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnSeparatorDownMouseUp.gif" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnSeparatorUp.gif" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnSeparatorUpMousePressed.gif" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnSeparatorUpMouseUp.gif" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnServers.gif" />
+    <EmbeddedResource Include="Client\Resources\Classic\BtnUpload.gif" />
+    <EmbeddedResource Include="Client\Resources\Classic\close.bmp" />
+    <EmbeddedResource Include="Client\Resources\Classic\Friend.ico" />
+    <EmbeddedResource Include="Client\Resources\Classic\FriendSlot.ico" />
+    <EmbeddedResource Include="Client\Resources\Classic\PopUpSkin.bmp" />
+    <EmbeddedResource Include="Client\Resources\Classic\preview.JPG" />
+    <EmbeddedResource Include="Client\Resources\Classic\skin.xml" />
+    <EmbeddedResource Include="Client\Resources\Classic\SmallGraphic.bmp" />
+    <EmbeddedResource Include="Client\Resources\Classic\StatusBarExtensible.bmp" />
+    <EmbeddedResource Include="Client\Resources\Classic\StatusBarLeft.bmp" />
+    <EmbeddedResource Include="Client\Resources\Classic\StatusBarRight.bmp" />
+    <EmbeddedResource Include="Client\Resources\Classic\ToolBarButtons.bmp" />
+    <EmbeddedResource Include="Client\Resources\Classic\ToolBarExtensible.bmp" />
+    <EmbeddedResource Include="Client\Resources\Classic\ToolBarRight.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

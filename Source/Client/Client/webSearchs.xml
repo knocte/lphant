@@ -1,0 +1,22 @@
+﻿<?xml version="1.0"?>
+<WebSearchs version="0.1">
+  <Searchs>
+	<Search SiteName="Google" URL="http://www.google.com/search?q=[CleanName] [film]" Language="All"/>
+	<Search SiteName="Servers list" URL="http://ed2k.2x4u.de/index.html" Language="All"/>
+	<Search SiteName="-"/>
+	<Search SiteName="FakeCheck" URL="http://donkeyfakes.gambri.net/fakecheck/update/fakecheck.php?hash=[HashId]" Language="All"/>
+	<Search SiteName="ReportFake" URL="http://donkeyfakes.gambri.net/report/index.php?link2=[eD2kLink]" Language="All"/>
+	<Search SiteName="-"/>
+	<Search SiteName="IMDB" URL="http://www.imdb.com/find?tt=on;mx=20;q=[CleanName]" Language="en"/>
+	<Search SiteName="Yahoo movies" URL="http://search.movies.yahoo.com/moviesintgsearch?search=all&amp;p=[CleanName]" Language="en" />
+	<Search SiteName="-"/>
+	<Search SiteName="Culturalia" URL="http://www.culturalianet.com/bus/resu.php?texto=[CleanName]" Language="es"/>
+	<Search SiteName="TodoCine" URL="http://www.todocine.com/cgi-bin/busqueda.cgi?Range=Any&amp;Format=Standard&amp;Terms=[CleanName]" Language="es"/>
+	<Search SiteName="Filmaffinity" URL="http://www.filmaffinity.com/es/res.php?stext=[CleanName]&amp;stype=all" Language="es" />
+	<Search SiteName="Yahoo movies" URL="http://es.search.movies.yahoo.com/search/movies_db_es?mt=[CleanName]" Language="es" />
+	<Search SiteName="-"/>
+	<Search SiteName="AlloCiné" URL="http://www.allocine.fr/recherche/default.html?motcle=[CleanName]" Language="fr" />
+	<Search SiteName="-"/>
+	<Search SiteName="OFDb" URL="http://www.ofdb.de/view.php?page=suchergebnis&amp;Kat=All&amp;SText=[CleanName]" Language="de" />
+  </Searchs>
+</WebSearchs> 

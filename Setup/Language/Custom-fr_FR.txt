@@ -1,0 +1,5 @@
+[Messages]
+LaunchlPhant=Démarrer lphant
+CreateDesktopIcon=Créer l'icône sur le bureau
+WarningDotNet1=Attention : lphant nécessite le framework .NET 1.1
+WarningDotNet2=Télécharger et installer le avant d'utiliser lphant !

@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<language lang="pl-PL">
+	<entry key="INIT_KRN">eLePhant v{0} Copyright (c) Juanjo. Jądro zainicjowane</entry>
+	<entry key="HASHING_FILE">Hashuję {0}</entry>
+	<entry key="SRV_CNN_LOST">Utracono połączenie z serwerem</entry>
+	<entry key="SRV_ADDED">{0} serwerów dodano</entry>
+	<entry key="SRV_DELETE">{0} serwerów usunięto</entry>
+	<entry key="SRV_CONNECTING">Połączono z {0}</entry>
+	<entry key="SRV_NOTCONNECT">Nie można połączyć się z {0}, powód: {1}</entry>
+	<entry key="HASH_END">{0} hash zakończono</entry>
+	<entry key="SRV_DISCONNECTED">Nie połączony</entry>
+	<entry key="SRV_CONNECTED">Połączenie ustanowione z {0}</entry>
+	<entry key="FIL_PARTCORRUPT">Pobrana część {0} jest uszkodzona, plik: {1}</entry>
+	<entry key="SRV_NEW_ID">Nowe {0} to {1}</entry>
+	<entry key="SRV_RECEIVED">{0} serwerów otzrymano</entry>
+	<entry key="SRV_ERR_LOAD">Błąd ładowania listy serwerów</entry>
+	<entry key="CLI_PAQ_DONK_ERROR">Błąd przetwarzania pakietu donkey {0}</entry>
+	<entry key="CLI_PAQ_EMULE_ERROR">Błąd przetwarzania pakietu emule {0}</entry>
+	<entry key="SRV_PAQ_TCP_ERROR">Błąd przetwarzania pakietu TCP serwera {0}</entry>
+	<entry key="SRV_PAQ_UDP_ERROR">Błąd przetwarzania pakietu UDP serwera {0}</entry>
+	<entry key="CLI_PAQ_UDP_ERROR">Błąd przetwarzania pakietu UDP klienta {0}</entry>
+	<entry key="CLI_UNK_EMULE_TCP_PACKET">Nieznany pakiet TCP klienta emule {0}</entry>
+	<entry key="CLI_UNK_UDP_PACKET">Nieznany pakieta UDP klienta {0}</entry>
+	<entry key="CLI_UNK_DONK_TCP_PACKET">Nieznany pakiet TCP klienta {0}</entry>
+	<entry key="LNK_INVALID">Nieprawidłowy link {0}</entry>
+	<entry key="SRVMET_INVALID">Server.met jest uszkodzony</entry>
+	<entry key="KNWMET_INVALID">Nieprawidłowy known.met, hashowanie plików udostępnianych</entry>	
+	<entry key="FIL_DUP">Już posiadasz ten plik ( {0} )</entry>
+	<entry key="DISK_FULL">Błąd podczas zapisywania pliku, prawdopodobnie dysk pełny, plik zatrzymany</entry>
+	<entry key="FIL_ADDED">Pobieranie {0}</entry>
+	<entry key="FIL_PUBLISHED">Pliki opublikowane: {0}</entry>
+	<entry key="PORT_INUSE">Port {0} jest używany przez inny program, zamknij tą aplikację lub wybierz inny port w preferencjach</entry>
+	<entry key="CLI_DONT_SEND_SHARED">{0} nie wysłał listy swoich plików udostępnionych</entry>
+	<entry key="FIL_DOWNLOADED">Plik {0} został pobrany z {1}</entry>
+	<entry key="FIL_COMPLETED">Ukończone pliki: {0}</entry>
+	<entry key="ERR1_COMPLETED">Plik {0} nie mógł zostać przeniesiony do katalogu docelowego. Zweryfikuj ilość wolnego miejsca.</entry>
+</language>

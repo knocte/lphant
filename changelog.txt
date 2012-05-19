@@ -1,0 +1,490 @@
+v1.01
+Juanjo: download 1st and last chunks first to preview sooner
+Juanjo: Added CCH (Crumbs corruption handling) lphant uses edonkey crumbs hashes to recover corrupted parts,
+		now bigger corrupted block is about 400KB instead of 9,2MB
+Juanjo: Start next stopped file when other ends, now lphant selects the highest priority file from the same category,
+		if none found, lphant starts the highest priority file.
+Juanjo: option to select the max sources limit for each file
+Juanjo: Max upload limit to allow unlimited download lowered from 10 to 9 to help spanish 512/128 users. Please set your upload as high as you can while your downloads are not affected.
+toertchn: Added multiline linkdrop to client
+70n1: speed control from tray menu and configuration of alternative connections speeds in the tray menu
+
+Visual changes:
+Juanjo: new lphant icon added [thanks to Psy]
+Juanjo: new about box [design by 70n1]
+Juanjo: friends list resizes automatically to the window height
+Juanjo: lower part in upload form can be resized with a splitter
+Juanjo: added some icons to the interface
+Juanjo: Do not allow 0 rates in up or down
+
+Fixes:
+70n1: fixed, incorrect values for position and size of the windows loading xml values
+Juanjo: fixed, Show/Hide details on downloads context menu works again
+toertchn: several fixes to run the kernel on mono
+Juanjo: fixed, changing the udp port several times while lphant is running causes an exception
+Juanjo: fixed, friends list scrollbar is flat again
+Juanjo: added splitter to servers form to allow to resize the list and the window log
+70n1: fixed rare exception receiving chunk status
+Juanjo: fixed, comment and rating values now use string named tags to avoid conflicts with emule
+Juanjo: fixed bug in parameter writer
+Juanjo: fixed, now it is safe to open download form in forms designer
+
+v1.00
+Juanjo: comboBox categories moved near filter label
+Juanjo: comboBox categories can be skined
+Juanjo: filter summary (MB and number of files) depends on the selected category 
+Juanjo: support for file categories
+Juanjo: MsnSkin fixed [roytam1]
+Juanjo: Autoscroll download list if the details panel hides the selected item
+Juanjo: When the form is resized the details panel size is not increased or shown if it was hidden
+Juanjo: show client version info in version.subversion format
+Juanjo: Enable/disable file context menu items depending on if the file is started or not
+Juanjo: Restore after minimize to tray does not show file details panel
+FeuerFrei: added new Hungarian translation [Thanks Decayer-9]
+FeuerFrei: fixed duplicated entries in xml [Thanks Decayer-9]
+Juanjo: fixed upload speed goes crazy if upload limit is higher than line upload bandwidth
+mimonty: Added compression to remote control
+mimonty: Added Ip filter to remote control
+Juanjo: fixed small remote control issues
+Juanjo: start a stopped file when other finalize option. lphant selects highest priority file.
+Juanjo: Save window position and size [by fbarbaise]
+Juanjo: show a message if no player is configured in preferences
+Juanjo: added ClientGTK 1st code [by finrold]
+toertchn: added SetRuntimeProperty in Config.cs
+toertchn: added SetPath/GetPath in InterfaceGateway
+toertchn: StartKernel() added to CKernel & CInterfaceGateway (start in Client\KernelGateway.cs > Initialize)
+toertchn: Controls\TaskbarNotifier.cs ~ Line 331 old line in comment > mono don't know Screen.GetWorkingArea(Rect)
+toertchn: added namespace eLePhant.Net
+toertchn: Firewall.cs in eLePhant.Net (currently not used)
+toertchn: nant added to cvs
+FeuerFrei: fixed crash with a blank line in ipfilter.dat
+FeuerFrei: added ScrollingCredits control
+FeuerFrei: added credits in the "About" for developers, retired members and translators
+Juanjo: cache version number for better performance
+Juanjo: version number is calculated from Protocol instead of Assembly (assembly returns 0.7.0.0 which is not 0.07)
+FeuerFrei: new upload slots are opened if needed
+toertchn: added CKernel.DoReportBug(string exception);
+toertchn: added string CKernel.DllDirectory;
+toertchn: added string CKernel.LangDirectory;
+toertchn: added string CKernel.Version, string Gateway.Version;
+Juanjo: fixed exception processing chunk status
+Juanjo: drop elinks into lphant window
+FeuerFrei: fixed crash on search with mdf and mds files in the results
+FeuerFrei: added total blocked ip message
+
+----------------------
+- May 25h, 2004 -
+----------------------
+Juanjo: solved, a file can be rehashed many times under some contitions.
+FeuerFrei: fixed crash when publishing avi file to server
+Juanjo: known.met is saved after each rehash instead of after rehashing all files, so if hash is aborted all hashes done are not lost.
+FeuerFrei: Blocked IP are now only displayed in the server log in DEBUG mod
+FeuerFrei: added a new translation: Finnish [Thanks to Jesse]
+FeuerFrei: avoid 0 file size in eLink crash
+FeuerFrei: added new translations for B (Byte),KB,MB,GB
+FeuerFrei: fixed English translation [Thanks to Jeremy]
+FeuerFrei: fixed sorting (download progress and upload) 
+toertchn: reorganized some code
+Juanjo: MsnSkin changed [roytam1]
+
+
+----------------------
+- May 17h, 2004 -
+----------------------
+Juanjo: upgraded to udp client <-> client version 4
+FeuerFrei: added spam keywords
+FeuerFrei: fixed crash with server elink with a high port number
+Juanjo: fixed bug #119 Downloading / Hashing a file with the same name. 
+FeuerFrei: added a spam filter
+FeuerFrei: added a new option in config.xml : "Receive message from friend only"
+Juanjo: fixed crash "on invisible control"
+FeuerFrei: removed minimize and maximize button in options, tabkernel is selected
+FeuerFrei: we can add server with high port number in servers form
+Juanjo: fixed bug #92 another exception on show context menu
+Juanjo: dont't use udp reask when you have to request sources
+Juanjo: change UDP port without restart. 
+		Now all settings (but remote control) can be changed without restart lphant !!
+Juanjo: added icons for friend list (skineables)
+Juanjo: better compatibility with mldonkey
+Juanjo: fixed get system icon rare bug
+Juanjo: tweaked queue management, kick from queue clients reasking too fast
+Juanjo: tweaked sources list management
+Juanjo: fixed crash on invalid link on skin menu link
+Juanjo: listView sorting arrows
+Juanjo: display own comments in comments list
+Juanjo: better queue management (add to queue from udp requests for sources)
+Juanjo: added sorting arrows to listviews (drawing to be improved)
+Juanjo: catch unhandled exceptions
+FeuerFrei: prevent many crashes in options
+FeuerFrei: username can't be blank
+Juanjo: fixed displayed duplicated sources in upload list view
+Juanjo: add, remove shared folders without have to click "Reload shared files" button
+Juanjo: improved smart source selection
+Juanjo: added a Old sources cache class (only for testing now) Probably it is not necessary
+Juanjo: better recover old sources to download
+Juanjo: detect when UDP port is probably closed or opened and show a message to user. The message can take until 5-10 minutes to appear
+		if lphant think it is closed it will be shown up to 6 times
+Juanjo: fixed, downloads are stoped [gontzal]
+Juanjo: smart source selection, when you reach the top of sources a file can reach acording with your configuration
+		new sources found will replace "bad" sources so in some time the number of bad sources should be minimized
+		bad sources are: first: No need part, second: queue full. 
+Juanjo: add, remove temp folders without restart
+Juanjo: fixed possible rare memmory leak displaying task bar notifier
+Juanjo: Rename shared files (without rehash)
+Juanjo: publish file video info on server
+Juanjo: changed file list timer by thread
+Juanjo: sort by progress column in sources and uploads
+Juanjo: change tcp port without restart
+
+----------------------
+- April 28h, 2004 -
+----------------------
+v0.05
+FeuerFrei: added support to non latin OS. New config.xml and friends.xml version
+FeuerFrei: added Traditional Chinese language [thanks to roytam1]
+Juanjo: reconnect on low id [gontzal]
+Juanjo: fixed, sometimes it take time to get sources
+FeuerFrei: fixed a bug in server.met http download, avoid a blank servers list
+Juanjo: removed SIMPLEEVENTS code to compile easier on mono
+Juanjo: fixed /main entry point to compile easier on sharpdevelop
+Juanjo: publish 200 files per minute
+Juanjo: added skins link to the about context menu
+FeuerFrei: fixed a bug when loading a server.met that have duplicated server (same IP, different port)
+FeuerFrei: upload and download in the title bar are now well rounded (avoid 1.999999999)
+Juanjo: joined hello packets and changed versioning
+Juanjo: send version tag in server hello packet
+Juanjo: friends listview is now in details view, skined and bigger
+Juanjo: detect and open web urls in the chat text box
+FeuerFrei: added tooltips in the options form (todo: add specific help labels)
+Juanjo: joined several commands in one TCP packet
+70n1: fixed bug loading .met files
+Juanjo: when a file is available for sharing it is added to the shared list and published to the servers
+FeuerFrei: friends with a port from 0 to 65535 can be added
+FeuerFrei: fixed, sometimes the upload graph was not refreshed
+FeuerFrei: fixed a crash on the queue timeout management
+FeuerFrei: fixed a crash in Inspector
+FeuerFrei: added "View files" from the Friends form
+Juanjo: when added a file for downloading from search list, the item is colored
+FeuerFrei: download tabs are refreshed "On file completed" action
+Juanjo: fixed bug in searches
+Skins changes:
+Juanjo: Added new skin parameter tabsInactiveForeColor, default #80000000
+Juanjo: Added new skin parameter SearchAlreadyDownloadingItemColor, default #FFFF0000
+Juanjo: Added new skin parameter SearchAlreadyDownloadedItemColor, default #FF008000
+Juanjo: Added new skin parameter GraphicLinesWidth, default width="1" height="0"
+Juanjo: Added new skin parameter: listsHeaderForeColor, defalut #FFFFFFFF
+Juanjo: skin applies to friends list header
+Juanjo: skin is applied better in options form
+Juanjo: fixed, skin colors were not applied to Rich Text boxes
+
+v0.04
+----------------------
+- April 8h, 2004 -
+----------------------
+Juanjo: fixed compatibility issue with emule 0.42 that made downloads slower
+FeuerFrei: added IPFilter. To use it copy an ipfilter.dat file in the lphant folder and activate it in preferences.
+70n1: added "Options" in systray menu 
+Juanjo: added open incoming folder to the file details
+Juanjo: context menu in download filter tabs to specify what is shown (total downloads count and/or total size)
+Juanjo: auto sort downloads list option
+Juanjo: fixed bug in search avaibility count
+Juanjo: fixed crash in search list
+Juanjo: fixed, lphant can start with a scheduled task
+FeuerFrei: added friend slot globalization
+Juanjo: fixed, set comments does not work in uploads form, moved set comments to file details
+Juanjo: allow to specify a skin URL in the skin.xml file. The url is displayed in the about context menu
+Juanjo: allow jpg images in skins
+70n1: added 32x32 icon for true colour
+Juanjo: fixed, Friends buttons was not loaded from the skin
+
+
+v0.03
+----------------------
+- March 24th, 2004 -
+----------------------
+Juanjo: added servers protocol extension to publish and detect complete files, when a server reports that a searched file is shared complete a "check" is shown with the file avaibility [thanks to lugdunum]
+Juanjo: added new server protocol extension. lphant now can connect on servers alternative ports. Servers with the alternative port must be introduced with a link or in the servers window, if the server already is present but in another port you must delete it first. [thanks to lugdunum]
+Juanjo: fixed, server connection is restored after an Internet disconnection (lphant retries each 5 minutes)
+FeuerFrei: added a new option "Show all languages" in the WebSearch menu
+FeureFrei: added a graphic auto scale mode (right-click on the graph)
+FeuerFrei: graphic historic is saved during a lphant session
+FeuerFrei: added copy eLink to clipboard (Sources) in sharedlistview
+Juanjo: show summary on filter labels
+70n1: fixed rare .met gaps status that could cause a file never download
+Juanjo: quick lphant restart now does not cause low id issues
+Juanjo: fixed, file extensions in lowercase were not recognized
+Juanjo: don't allow duplicate servers in same IP address with different ports in the servers list
+FeuerFrei: setup backups "webSearchs.xml"
+Juanjo: fixed restore from maximize bug
+Juanjo: about box form not shown in taskbar
+Juanjo: Queue process timers changed by a thread
+FeuerFrei: added a default item to the notify context menu
+FeuerFrei: added "show/hide details" to the download context menu
+FeuerFrei: added a check in the shared/download/server priority context menus
+FeuerFrei: fixed, cannot use the "del" key if a file is not completed.
+FeuerFrei: added a default menuitem in the shared/server/download/search context menus
+FeuerFrei: lphant does not hang if no server is loaded
+
+
+v0.02
+----------------------
+- March 9th, 2004 -
+----------------------
+Juanjo: Added search for any word option
+Juanjo: Added exclude results option in search
+Juanjo: default skin is now Classic skin instead of MsnSkin
+Juanjo: added friend slot
+Juanjo: added "Estimated" column to download list view
+Juanjo: search more now search more results also from the current server
+Juanjo: added extensible search more info menu in webSearchs.xml 
+Juanjo: Added to file details downloaded, uploaded, avg down and avg up per file.
+Juanjo: very high upload priority has now more weight
+Juanjo: allow extra 50 positions in queue reserved for very high priority files
+FeuerFrei: fixed avaibility search sorting
+Juanjo: added About box form [image by wolmut]
+FeuerFrei: Added new setup installer script : .Net detection, multi language, open the localized .Net download page, Mutex info to the setup script, prevent to install lphant if already starting
+FeuerFrei: added a ContextMenu to the notifyIcon
+FeuerFrei: added a new translation : russian [thanks to FAV]
+FeuerFrei: added a new translation : italian [thanks to RangO]
+Juanjo: file statistics are updated more frequently
+Juanjo: globalized server connection error messages
+Juanjo: if the skin does not exist default skin is selected
+Juanjo: do not hash and share system or hidden files
+Juanjo: friends allways enter the queue
+Juanjo: added file completed time label
+FeuerFrei: removed duplicated code in Friend.cs
+FeuerFrei: changed userhash encoding in friends.xml : from Unicode to Base64
+Juanjo: added about box context menu
+FeuerFrei: fixed, reload shared files works if a shared directory is deleted from options
+Juanjo: fixed bug getting file extension
+Juanjo: fixed donwload counter reset after 4Gb
+Juanjo: registry lphant ico for elinks when lphant take elinks
+Juanjo: fixed exception in taskbar notifier
+Juanjo: fixed exception on connection errors catch code
+FeuerFrei: fixed server.met loading if httDownloadServerMet is set to false
+Juanjo: added search more info for shared files
+Juanjo: fixed crash closing timeout connections
+Juanjo: fixed, search list does not update the last search item
+Juanjo: fixed, search list crash
+FeuerFrei: minor fixes in "search more" feature. Changed ASCII to UTF-8 file to avoid crashes
+Juanjo: fixed out of memory exception due to error in GDI
+Juanjo: fixed sorting by version in sources lists
+Juanjo: fixed, sometimes items in lists are in bold 
+Juanjo: upload bandwidth is more stable now
+FeuerFrei: removed a deadlock while downloading a server.met from the server form
+FeuerFrei: fixed duplicated servers if you download a server.met from the server form
+
+
+v0.01
+----------------------
+- Febrary 13th, 2004 -
+----------------------
+Juanjo: upload/download ratio set as emule (to review in the future)
+70n1: fixed, files are stopped and the disc is not full
+Juanjo: fixed, tray icon disappears
+Juanjo: Refresh filenames and comments list instead of reload them.
+Juanjo: Refresh server list instead of reload it
+Juanjo: fixed, take elinks code didn't work in clean computers
+Juanjo: if a file is unshared and shared again lphant has not to rehash it
+Juanjo: fixed crash in m_RepairLphantOldGaps if the file has no gaps [Thanks to pags4]
+FeuerFrei: added download servers list from the server form
+Juanjo: fixed rare exception when a connection just received a packet in its timeout
+Juanjo: fixed rare exception when a client tried a UDP reask without a valid download file hash
+FeuerFrei: added elinks from browser can be stopped
+Juanjo: fixed crash if servers.met has invalid port numbers [thanks to Gontzal]
+Juanjo: fixed some pending blocks were not freed in some very rare case
+Juanjo: changed upload slots bandwidth:<=9 ->2, <=15 ->3, <=22 ->4, >22 ->5
+FeuerFrei: fixed many crashes if non numerical values were entered for some textboxes (port, queue,...)
+Juanjo: fixed, if the user disconnects from servers, now lphant does not try to reconect again even with autoreconnect checked
+Juanjo: fixed, if the user connect to a server and the connection is not successful, lphant wont try to connect to more servers
+Juanjo: add servers button
+70n1: catched gdi error drawing list element
+Juanjo: fixed, list headers redraw when skin is changed
+Juanjo: fixed, window icon blinks and sometimes disappear causing GDI errors
+Juanjo: fixed mldonkey detection [thanks to zcat]
+Juanjo: fixed glitch resizing the listviews 
+Juanjo: fixed glitch in sources listview when no chunk status was present
+Juanjo: fixed, sometimes search could not be cancelled
+FeuerFrei: added a percent number to the progress download bar.
+
+
+v0.01-pre6
+----------------------
+- Jaunary 29th, 2004 -
+----------------------
+Juanjo: 3d progress bars in the lists
+Juanjo: skins support
+Juanjo: reduced memory usage
+Juanjo: better handling of download sessions, it now must download faster
+70n1: improved compability with emule and edonkey .mets
+70n1: fixed file stops in some conditions [thanks to ^^ghost^^ for helping us]
+70n1: fixed support for files bigger than 2 Gb
+Juanjo: bitrate, codec and length details in search list
+Juanjo: colours and icons for search list view
+FeuerFrei: added the search total result in the tabpage : xxx (123456)
+FeuerFrei: fixed, cancel several files works.
+FeuerFrei: fixed bug #56, a new textbox for the default incoming folder (Shared[0])
+Juanjo: Online signature merged [developed by C00I90WN!]
+Juanjo: remote control is easy to configure now
+Juanjo: graphic speed is now scalable
+FeuerFrei, Juanjo: icons for several lists
+Team: minor fixes
+FeuerFrei: added IPFilter class, for later use only
+FeuerFrei: added some KeyEvents to the lists
+
+v0.01-pre5
+----------------------
+- December 9th, 2003 -
+----------------------
+Team: fixed most of the bugs reported
+Juanjo: fixed many interface bugs
+Juanjo: reduced CPU load
+toertchn: better progress bar drawing
+Juanjo: added edonkey chat
+70n1: added friends support
+Juanjo: fixed rehashing files [thanks to c00l90wn]
+Juanjo: click in the graphic expands it
+Juanjo: fixed, download speed measurement more accurate
+Juanjo: show session uploaded/downloaded
+Juanjo: added upload chunck state to kernel and shared file list
+70n1: fixed exception when loads .met file without gaps and hashset from emule and any emule mods
+70n1: better compatibility with emule .met files
+Team: priorities for download, upload and servers
+FeuerFrei: Icon in systray depends on the ID : not connected = red, low ID = orange; high ID = green
+70n1: Changes in interface appearance.
+Juanjo: added autoscroll in text boxes
+Juanjo: added file completing state
+70n1: fixed bug completing file
+Juanjo: added interface globalization support, currently, English, Spanish and French
+Juanjo: changed globalization to allow specific language cultures [thanks to c00l90wn]
+Juanjo: All list save and load columns width and positions
+70n1: surer .met files backup system. Now, only backup a .met file when a chunk is completed.
+FeuerFrei: SourceExchange should be more effective
+
+v0.01-pre4
+----------------------
+- November 13th, 2003-
+----------------------
+
+Juanjo: Removed GC.Collect calls to reduce CPU load
+Juanjo: chunks avaibility now is calculated incrementally to reduce CPU load
+FeuerFrei: Addlink(ADD/CANCEL), the eLink textbox is cleared
+70n1: lphant skin for tray messages
+70n1: fixed exception when is deleted the temp directory and you start a download
+FeuerFrei:ID informations are back (in log and server's name tooltip)
+Juanjo: view peer shared files in search tab
+Juanjo: fixed issue: tray icon is not refreshed and can cause GDI exception when lphant is restored
+Juanjo: fixed possible exception when a client disconnects
+Juanjo: fixed search can not be used if disconnected from server while searching
+FeuerFrei: eLinks can have trailing spaces (or anything else) before ed2k://
+Juanjo: when lphant is minimized the interface is not refreshed, it avoids a lot of CPU load
+FeuerFrei:added upload info in tray icon (red line)
+Juanjo: rolling back some changes to follow coding style
+Juanjo: fixed single instance in release mode
+Juanjo: searches indexed by identifier
+FeuerFrei:fixed columns issue in ServerListView
+FeuerFrei:fixed user/files inversion in the server.met reading
+toertchn: CClient internal moved to propertys
+Juanjo: solved interlock situation and catch some exceptions
+70n1: backup for met file for solve met deleted or corrupted
+Juanjo: select connection type at start-up is now optional
+FeurFrei: added French information message at start-up (release only)
+FeuerFrei: French kernel language updated
+FeuerFrei: add sorting to ServerListView
+toertchn: CPreferences class removed -> moved to Config
+toertchn: Kernel.Classes namespace added
+toertchn: first try to switch to new Config class to store preferences
+Juanjo: added messenger style messages in the tray icon
+FeuerFrei: removed all warnings
+FeurFrei: avoid a crash if an antivirus deletes a .part file with a virus
+Juanjo: added preview files
+Juanjo: added config in preferences
+Juanjo: added take ed2k links and single instance
+Juanjo: can not connect clients are not moved to other file although they are source for the file
+Juanjo: fixed reserved downloading blocks were not freed after a disconnection under some circumstances
+Juanjo: client IPs not showed in release mode
+Juanjo: added minimize to tray TODO: make it as an option
+Juanjo: added speed values in window caption
+Juanjo: TCP request to get sources from server now are better distributed in time (20 secs between files and 20 minutes when all have been asked)
+Juanjo: double-click on download list show hide file info
+Juanjo: lphant window is displayed at the time of the kernel initialization, not after, so it can display hashing files messages
+Juanjo: Added clear completed
+Juanjo: fixed bug in elink parse that can cause a exception if invalid elink is added
+Juanjo: lphant now show message if UDP or TCP ports are in use by another application
+70n1: fixed, blocked threads raise a file couldn't download more until restart lphant
+70n1: fixed, changed the method of send FileInfo to the interfaz
+Juanjo: fixed, cant get sources with the same TCP port that you [FeuerFrei]
+Juanjo: LogClient now logs to disk if VERBOSE
+Juanjo: fixed problem setting port UDP in preferences
+Juanjo: fixed exception when adding a file
+
+v0.01-pre3
+----------------------
+- October 30th, 2003 -
+----------------------
+Juanjo: added a button in shared list to reload getting new files and republish to server the list
+Juanjo: fixed error in known.met
+Juanjo: Added sorting for search list view
+Juanjo: fixed, when file was completed and user try to cancel file a exception was raised
+Juanjo: fixed, when file was completed and user try to resume the file changed to ready state
+Juanjo: Added 2 decimal digit to MB values in download list
+Juanjo: translated into English some debug strings
+70n1: fixed, error in gaps redownloading corrupted chunks
+Juanjo: added nant build file for mono kernel compilation
+70n1: calculate and show divx info
+Juanjo: Added kernel support for french [FeuerFrei]
+Juanjo: fixed, when compiled in release mode add links didn't worked
+70n1: fixed, files can't finish download due error in gaps 
+70n1: optimized hashing in completing file
+Juanjo: fileslist should be more thread safe now
+Juanjo: solved big memory leak
+70n1: fixed, infinite loop when end of gap<end of one chunk 
+Juanjo: CQueue now is more thread safe
+70n1: fixed, bug in gap values 
+70n1: fixed, completing download forces redownload
+Juanjo: fixed, when download stops because disk full sometimes file was not stopped
+Juanjo: fixed, a new download was added with an upload priority of 0
+Juanjo: now the shared list shows incomplete and not empty files too.
+Juanjo: fixed, sometimes sources remained in unknown status when cancelling download transfer.
+Juanjo: added an option to allow view our shared files or not.
+toertchn: fixed, exception on FilesList.LoadIncompletedFiles() if directory don't exist
+Juanjo: fixed, when client request a file not found or empty now is handled correctly
+toertchn: more protocol types changed
+Juanjo: interface support for various temp and shared folders
+Juanjo: reduced memory consumption
+Juanjo: Added copy link to clipboard in download list
+Juanjo: fixed problem detecting the software of emule compatible clients
+Juanjo: fixed sourceexchange filter both peers in the sources list
+Juanjo: fixed add ourselves as source
+Juanjo: Added kernel support for viewing peer shared files, results are not displayed in the interface yet
+Juanjo: fixed, connected sources that don't respond to the file request now are removed from sources list
+Juanjo: fixed, connected sources that responded FileNotFound sometimes were not removed
+Juanjo: fixed exception (modified collection) in CFilesList
+Juanjo: command line elink parameter supported
+Juanjo: fixed bug with loading/saving known.met
+Juanjo: fixed bug when stopping file
+Juanjo: now not need anymore clients should be removed from CClientsList
+toertchn: CServer updated to properties
+toertchn: Server, ServersList, ServerConnection documentation added
+toertchn: eLePhant.Types added
+toertchn: Constants moved to Protocol
+Juanjo: FilesList indexed by hash in byte[] (not by string)
+Juanjo: Added speed graphics
+Juanjo: Added shared listview to the interface
+Juanjo: Added support to rename downloading files
+
+
+v0.01-pre2
+----------------------
+- October 8th, 2003  -
+----------------------
+Now the source code is full translated into English!!
+Fixed and added many things
+Added support for new server protocol extensions (16.40)
+Globalization strings in XML files (support for English, Spanish and German)
+
+v0.01
+----------------------
+- July 12th, 2003   -
+----------------------
+First source only release

@@ -1,0 +1,19 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eLePhantClient", "Client\eLePhantClient.csproj", "{D8219D66-2C00-401D-92AD-023D118E3693}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eLePhantInterface", "Interface\eLePhantInterface.csproj", "{43032E62-D53F-4F64-8F7F-F58522FDFBE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eLePhant", "Kernel\eLePhant.csproj", "{B89EE87D-F0FA-41D9-8C83-D8B913187DE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		name = eLePhant
+		StartupItem = Client\eLePhantClient.csproj
+	EndGlobalSection
+EndGlobal

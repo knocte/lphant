@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<lphantSkin version="0.01">
+  <colors>
+    <color key="defaultBackColor" value="FFD4D0CB" /> 
+    <color key="defaultForeColor" value="FF000000" />
+    
+    <color key="labelsForeColor" value="FF000000" />
+    <color key="labelsBackColor" value="FFECEAE6" />
+
+    <color key="listsForeColor" value="FF000000" />
+    <color key="listsBackColor" value="FFFFFFFF" />
+    <color key="listsHeaderBackColor" value="FFD4D0CB" />
+    <color key="listsHeaderForeColor" value="FF000000" />
+    <color key="listsScrollBarBackColor" value="00F7E7DE" />
+        
+    <color key="ButtonForeColor" value="FF000000" />
+    <color key="ButtonBackColor" value="FFECEAE6" />
+
+    <color key="TextBoxForeColor" value="FF000000" />
+    <color key="TextBoxBackColor" value="FFFFFFFF" />
+    
+    <color key="readOnlyTextBoxForeColor" value="FF444597" />
+    <color key="readOnlyTextBoxBackColor" value="FFFFFFE1" />
+
+    <color key="SquaredLabelsBackColor" value="FFD4D0CB" />
+    <color key="SquaredLabelsForeColor" value="FF000000" />
+    
+    <color key="panelsBackColor" value="FFECEAE6" />
+    <color key="SplittersBackColor" value="FFD4D0CB" />
+    <color key="ToolBarButtonSelectedBackColor" value="FFFFFFFF" />
+    <color key="ToolBarButtonHoverColor" value="FFFFFFFF" />
+    <color key="ToolBarButtonInactiveBackColor" value="00FFFFFF" />
+    <color key="ToolBarButtonTextColor" value="FF000000" />
+    <color key="StatusBarMessageTextColor" value="FF000000" />
+    <color key="StatusBarServerTextColor" value="FF000000" />
+    <color key="StatusBarDownSpeedTextColor" value="FF008000" />
+    <color key="StatusBarUpSpeedTextColor" value="FFFF0000" />
+    <color key="StatusBarAvgTextColor" value="FF444597" />
+    <color key="GraphicGridColor" value="FFD4D0CB" />
+    <color key="GraphicDownLineColor" value="FF90EE90" />
+    <color key="GraphicUpLineColor" value="FFFF0000" />
+    
+    <color key="SearchAlreadyDownloadingItemColor" value="FFFF0000" />
+    <color key="SearchAlreadyDownloadedItemColor" value="FF008000" />
+    
+    <color key="tabsInactiveForeColor" value="80000000" />
+    
+  </colors>
+
+  <positions>
+	<position key="BtnOptionsPosition" x="300" y="8" />
+	<position key="BtnConnectionPosition" x="340" y="8" />
+	<position key="SmallGraphicPosition" x="2" y="2" />
+	<position key="BigGraphicPosition" x="2" y="2" />
+  </positions>
+  
+  <sizes>
+	<size key="BtnOptionsSize" width="40" height="40" />
+	<size key="BtnConnectionSize" width="40" height="40" />
+	<size key="SmallGraphicSize" width="309" height="54" />
+	<size key="BigGraphicSize" width="309" height="156" />
+	<size key="GraphicLinesWidth" width="1" height="0" />
+  </sizes>
+</lphantSkin>

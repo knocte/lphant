@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<language lang="fr-FR"> 
+	<entry key="INIT_KRN">eLePhant v{0} Copyright (c) Juanjo. Kernel initialisé</entry> 
+	<entry key="HASHING_FILE">Hachage de {0}</entry> 
+	<entry key="SRV_CNN_LOST">Connexion serveur perdue</entry>
+	<entry key="SRV_ADDED">{0} serveurs ajoutés</entry> 
+	<entry key="SRV_DELETE">{0} serveurs supprimés</entry> 
+	<entry key="SRV_CONNECTING">Connexion à {0}</entry> 
+	<entry key="SRV_NOTCONNECT">Impossible de se connecter à {0}, raison: {1}</entry> 
+	<entry key="HASH_END">Hachage de {0} finalisé</entry> 
+	<entry key="SRV_DISCONNECTED">Pas connecté</entry> 
+	<entry key="SRV_CONNECTED">Connexion à {0}</entry> 
+	<entry key="FIL_PARTCORRUPT">Partie téléchargée {0} est corrompue, fichier: {1}</entry> 
+	<entry key="SRV_NEW_ID">Nouveau {0} est {1}</entry> 
+	<entry key="SRV_RECEIVED">{0} serveurs reçus</entry> 
+	<entry key="SRV_ERR_LOAD">Erreur pour charger la liste des serveurs</entry> 
+	<entry key="CLI_PAQ_DONK_ERROR">Erreur de traitement du packet donkey {0}</entry> 
+	<entry key="CLI_PAQ_EMULE_ERROR">Erreur de traitement du packet emule {0}</entry> 
+	<entry key="SRV_PAQ_TCP_ERROR">Erreur de traitement du packet TCP serveur {0}</entry> 
+	<entry key="SRV_PAQ_UDP_ERROR">Erreur de traitement du packet UDP serveur {0}</entry> 
+	<entry key="CLI_PAQ_UDP_ERROR">Erreur de traitement du packet UDP client {0}</entry> 
+	<entry key="CLI_UNK_EMULE_TCP_PACKET">Packet TCP client emule inconnu {0}</entry> 
+	<entry key="CLI_UNK_UDP_PACKET">Packet UDP client inconnu {0}</entry> 
+	<entry key="CLI_UNK_DONK_TCP_PACKET">Packet TCP client edonkey inconnu {0}</entry> 
+	<entry key="LNK_INVALID">Lien invalide {0}</entry> 
+	<entry key="SRVMET_INVALID">Le fichier server.met est corrompu</entry> 
+	<entry key="KNWMET_INVALID">Le fichier known.met est invalide, hachage des fichiers partagés</entry> 
+	<entry key="FIL_DUP">Vous avez déjà ce fichier ( {0} )</entry> 
+	<entry key="DISK_FULL">Erreur d'écriture sur le disque, le disque est peut-être plein, fichier arrêté</entry> 
+	<entry key="FIL_ADDED">Téléchargement de {0}</entry>
+	<entry key="FIL_PUBLISHED">Fichier publiés: {0}</entry>
+	<entry key="PORT_INUSE">Le port {0} est utilisé par une autre application, fermez cette application ou sélectionnez un autre port dans les préférences</entry>
+	<entry key="CLI_DONT_SEND_SHARED">{0} n'envoie pas sa liste de fichiers partagés</entry>
+	<entry key="FIL_DOWNLOADED">Le fichier {0} a été téléchargé depuis {1}</entry>
+	<entry key="FIL_COMPLETED">Fichier complété: {0}</entry>
+	<entry key="ERR1_COMPLETED">Le fichier {0} n'a pas pu être déplacé. Vérifier que l'espace disque est suffisant.</entry>
+	<entry key="UNK_REASON">Raison inconnu</entry>
+	<entry key="CANT_CONNECT">Impossible de se connecter</entry>
+	<entry key="CONNECTION_CLOSED">Connexion fermée</entry>
+	<entry key="NULL_PACKET">Packet nul</entry>
+	<entry key="NULL_ID">ID nul</entry>
+	<entry key="INVALID_HEADER">En-tête invalide</entry>
+	<entry key="TIMEOUT">Timeout</entry>
+	<entry key="FILE_NOT_FOUND">Fichier non trouvé</entry>
+	<entry key="ICH_SAVEDPART">Partie {0} sauvée grâce à l'I.C.H</entry>
+	<entry key="SRV_FULL">Plein</entry>
+	<entry key="SRV_DOWN">Tombé</entry>
+	<entry key="IP_FILTER_LOADED">{0} plages d'IP du fichier {1} chargées</entry>
+	<entry key="IP_BLOCKED">IP bloquée : {0} - {1}</entry>
+	<entry key="LOW_ID_RETRY">lphant a reçu un low ID alors qu'un high ID était attendu, nouvel essai</entry>
+	<entry key="UDP_PORT_NOT_OPEN">Aucune activité sur le port UDP</entry>
+	<entry key="UDP_PORT_IS_OPEN">Le port UDP fonctionne correctement</entry>
+	<entry key="TOTAL_IP_BLOCKED">{0} IP ont déjà été bloquées</entry>
+</language> 	
+
+

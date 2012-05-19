@@ -1,0 +1,5 @@
+[Messages]
+LaunchlPhant=Launch lphant
+CreateDesktopIcon=Create a &desktop icon
+WarningDotNet1=Warning : lphant requires .NET 1.1 Framework
+WarningDotNet2=Download and install it before using lphant !

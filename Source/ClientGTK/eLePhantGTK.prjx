@@ -1,0 +1,64 @@
+<Project name="eLePhantGTK" standardNamespace="NewProject" description="" newfilesearch="None" enableviewstate="True" version="1.1" projecttype="C#">
+  <Contents>
+    <File name=".\Main.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\AssemblyInfo.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\About.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Options.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\elephant.glade" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\lPhant.png" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Classic\BtnDownload.gif" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Classic\BtnConnect.ico" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Classic\BtnDisconnect.ico" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Classic\BtnFriends.gif" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Classic\BtnOptions.ico" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Classic\BtnSearch.gif" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Classic\BtnServers.gif" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Classic\BtnUpload.gif" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\TIcon.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Servers.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Downloads.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Uploads.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Comments.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\SharedFiles.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\SelectFolder.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\Search.cs" subtype="Code" buildaction="Compile" dependson="" data="" />
+    <File name=".\pixmaps\Nuvola\configure.gif" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Nuvola\connect_estabilished.gif" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Nuvola\connect_no.gif" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Nuvola\down.gif" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Nuvola\help.gif" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Nuvola\network.gif" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Nuvola\up.gif" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Nuvola\viewmag.gif" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+    <File name=".\pixmaps\Nuvola\kdmconfig.gif" subtype="Code" buildaction="EmbedAsResource" dependson="" data="" />
+  </Contents>
+  <References>
+    <Reference type="Gac" refto="gtk-sharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" localcopy="True" />
+    <Reference type="Gac" refto="gdk-sharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" localcopy="True" />
+    <Reference type="Gac" refto="glib-sharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" localcopy="True" />
+    <Reference type="Gac" refto="pango-sharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" localcopy="True" />
+    <Reference type="Gac" refto="glade-sharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" localcopy="True" />
+    <Reference type="Gac" refto="I18N, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" localcopy="True" />
+    <Reference type="Gac" refto="eLePhant, Version=0.7.0.0, Culture=neutral, PublicKeyToken=null" localcopy="True" />
+    <Reference type="Assembly" refto=".\egg-sharp.dll" localcopy="True" />
+    <Reference type="Assembly" refto=".\eLePhant.dll" localcopy="True" />
+  </References>
+  <DeploymentInformation target="" script="" strategy="File" />
+  <Configuration runwithwarnings="False" name="Debug">
+    <CodeGeneration runtime="Mono" compiler="Mcs" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" target="Exe" definesymbols="" generatexmldocumentation="False" win32Icon="" noconfig="False" nostdlib="False" />
+    <Execution commandlineparameters="" consolepause="True" />
+    <Output directory=".\bin\Debug" assembly="eLePhantGTK" executeScript="" executeBeforeBuild="" executeAfterBuild="" executeBeforeBuildArguments="" executeAfterBuildArguments="" />
+  </Configuration>
+  <Configurations active="Debug">
+    <Configuration runwithwarnings="False" name="Debug">
+      <CodeGeneration runtime="Mono" compiler="Mcs" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" target="Exe" definesymbols="" generatexmldocumentation="False" win32Icon="" noconfig="False" nostdlib="False" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Debug" assembly="eLePhantGTK" executeScript="" executeBeforeBuild="" executeAfterBuild="" executeBeforeBuildArguments="" executeAfterBuildArguments="" />
+    </Configuration>
+    <Configuration runwithwarnings="False" name="Release">
+      <CodeGeneration runtime="Mono" compiler="Mcs" compilerversion="Standard" warninglevel="4" nowarn="" includedebuginformation="True" optimize="True" unsafecodeallowed="False" generateoverflowchecks="True" mainclass="" target="Exe" definesymbols="" generatexmldocumentation="False" win32Icon="" noconfig="False" nostdlib="False" />
+      <Execution commandlineparameters="" consolepause="True" />
+      <Output directory=".\bin\Release" assembly="eLePhantGTK" executeScript="" executeBeforeBuild="" executeAfterBuild="" executeBeforeBuildArguments="" executeAfterBuildArguments="" />
+    </Configuration>
+  </Configurations>
+</Project>

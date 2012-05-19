@@ -1,0 +1,5 @@
+[Messages]
+LaunchlPhant=lphant jetzt starten.
+CreateDesktopIcon=&Desktop Icon erstellen
+WarningDotNet1=lphant benötigt das .NET 1.1 Framework
+WarningDotNet2=Laden und installieren sie es bevor sie lphant starten.

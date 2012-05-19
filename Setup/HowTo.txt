@@ -1,0 +1,8 @@
+How to create the setup.exe file :
+
+1) Download and install Inno Setup QuickStart Pack 4.18 (www.jrsoftware.org)
+http://files.jrsoftware.org/ispack/ispack-4.1.8.exe
+
+2) Compile lphant in Release mode
+
+3) Start lphant.iss and compile it with IStool

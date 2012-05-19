@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B89EE87D-F0FA-41D9-8C83-D8B913187DE1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>eLePhant</RootNamespace>
+    <AssemblyName>eLePhant</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunWithWarnings>false</RunWithWarnings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunWithWarnings>false</RunWithWarnings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="ICSharpCode.SharpZipLib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Classes\Config.cs" />
+    <Compile Include="Classes\Globalization.cs" />
+    <Compile Include="Classes\HexConvert.cs" />
+    <Compile Include="eDonkey\Category.cs" />
+    <Compile Include="eDonkey\Client.cs" />
+    <Compile Include="eDonkey\ClientsList.cs" />
+    <Compile Include="eDonkey\Commands.cs" />
+    <Compile Include="eDonkey\CommandsServer.cs" />
+    <Compile Include="eDonkey\Comments.cs" />
+    <Compile Include="eDonkey\Connection.cs" />
+    <Compile Include="eDonkey\ConnectionsList.cs" />
+    <Compile Include="eDonkey\File.cs" />
+    <Compile Include="eDonkey\FileDetails.cs" />
+    <Compile Include="eDonkey\FilesList.cs" />
+    <Compile Include="eDonkey\FileStatistics.cs" />
+    <Compile Include="eDonkey\Friends.cs" />
+    <Compile Include="eDonkey\GapList.cs" />
+    <Compile Include="eDonkey\Hash.cs" />
+    <Compile Include="eDonkey\httpDownload.cs" />
+    <Compile Include="eDonkey\InterfaceGateway.cs" />
+    <Compile Include="eDonkey\IPFilter.cs" />
+    <Compile Include="eDonkey\Kernel.cs" />
+    <Compile Include="eDonkey\Links.cs" />
+    <Compile Include="eDonkey\Listener.cs" />
+    <Compile Include="eDonkey\ListenerUDP.cs" />
+    <Compile Include="eDonkey\Log.cs" />
+    <Compile Include="eDonkey\LogClient.cs" />
+    <Compile Include="eDonkey\Protocol.cs" />
+    <Compile Include="eDonkey\Queue.cs" />
+    <Compile Include="eDonkey\Remoting.cs" />
+    <Compile Include="eDonkey\Search.cs" />
+    <Compile Include="eDonkey\Server.cs" />
+    <Compile Include="eDonkey\ServerConnection.cs" />
+    <Compile Include="eDonkey\ServersList.cs" />
+    <Compile Include="eDonkey\SourcesList.cs" />
+    <Compile Include="eDonkey\SourcesOld.cs" />
+    <Compile Include="eDonkey\Statistics.cs" />
+    <Compile Include="eDonkey\Utils.cs" />
+    <Compile Include="Types\Types.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ICSharpCode.SharpZipLib.dll" />
+    <Content Include="eDonkey\Language\kernel_ca-ES.xml" />
+    <Content Include="eDonkey\Language\kernel_de-DE.xml" />
+    <Content Include="eDonkey\Language\kernel_en-US.xml" />
+    <Content Include="eDonkey\Language\kernel_es-ES.xml" />
+    <Content Include="eDonkey\Language\kernel_fi-FI.xml" />
+    <Content Include="eDonkey\Language\kernel_fr-FR.xml" />
+    <Content Include="eDonkey\Language\kernel_gl-ES.xml" />
+    <Content Include="eDonkey\Language\kernel_hu-HU.xml" />
+    <Content Include="eDonkey\Language\kernel_it-IT.xml" />
+    <Content Include="eDonkey\Language\kernel_pl-PL.xml" />
+    <Content Include="eDonkey\Language\kernel_pt-BR.xml" />
+    <Content Include="eDonkey\Language\kernel_ru-RU.xml" />
+    <Content Include="eDonkey\Language\kernel_zh-TW.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
